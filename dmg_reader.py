@@ -3,6 +3,8 @@
 
 import subprocess
 import csv
+import os
+
 
 disk_path = 'AdobeConnect2019.5.1.dmg'
 
@@ -34,7 +36,9 @@ for line in lines:
     parts = line.split()
     csv_writer.writerow(parts)
 '''
-with open('normaldmgs_train/text.txt', 'w') as file:
-    file.write(result)
+
+
+with open(file_full_path, "w") as f:
+    f.write(result)
 
 # Print the output
