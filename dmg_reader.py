@@ -37,6 +37,14 @@ for line in lines:
     csv_writer.writerow(parts)
 '''
 
+folder_path = "normaldmgs_train"
+
+num_files = str(len(os.listdir(folder_path)))
+
+file_name = num_files+"_sample.txt"
+
+file_full_path = os.path.join(folder_path, file_name)
+
 
 with open(file_full_path, "w") as f:
     f.write(result)
