@@ -1,5 +1,5 @@
-# Set the file path
-path = 'AdobeConnect2019.5.1.dmg'
+# Set the file path to your PE file
+path = 'something.exe'
 
 # Initialize the byte count and line list
 byte_count = 0
