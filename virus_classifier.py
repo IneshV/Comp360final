@@ -3,8 +3,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
 # define the paths to the training data folders
-normal_folder = 'normaldmgs_train'
-virus_folder = 'virusdmgs_train'
+normal_folder = 'safe_strings_folder'
+virus_folder = 'malicious_string_folder'
 
 # define the vectorizer and classifier
 vectorizer = CountVectorizer()
