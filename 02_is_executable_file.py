@@ -18,6 +18,6 @@ bit_one = "{0:0{1}x}".format(file_content[0],2)
 bit_two = "{0:0{1}x}".format(file_content[1],2)
 
 # If the first two bytes are "4d" and "5a" respectively, set the executable flag to True
-if bit_one=='4d' and bit_two =='5a':
+if (bit_one=='4d' and bit_two =='5a') or (bit_one == 'MZ' or bit_two == 'MZ'):
     executable = True
     print('this is an executable file')
