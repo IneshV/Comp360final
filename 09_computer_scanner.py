@@ -136,11 +136,23 @@ def get_all_files():
             
 def main():
     for item in get_all_files():
+        executable_files = []
+        
         if is_executable(item):
+            executable_files.append(item)
+        
+            print('Executabl Files  are: ')
+
+
             with open("data.csv") as csvfile:
                 read_csv = csv.DictReader(csvfile)
+                c
+                
+            viruses =[]
             if is_in_hash_csv(item,read_csv):
-                break
+                viruses.append(item)
+                print('Known viruses are: ')
+                print(viruses)
             else:
                 model_items = get_training_data()
                 virus_classifier(item,model_items)
