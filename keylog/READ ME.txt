@@ -1,0 +1,4 @@
+READ ME
+
+Although this is a test virus, it still could clog up space and memory.
+The only way i could get this to stop was through the task manager
